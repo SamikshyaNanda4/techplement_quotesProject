@@ -5,7 +5,7 @@ import axios from 'axios';
 const App = () => {
 
   const [quote, setQuote] = React.useState("Click for Quote")
-  const [author, setAuthor] = React.useState("-Author")
+  const [author, setAuthor] = React.useState("Author")
 
   const handleQuote = async() => {
 const res =await axios.get("https://api.quotable.io/random");
